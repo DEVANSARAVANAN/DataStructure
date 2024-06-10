@@ -8,6 +8,16 @@ class LinkedList:
 
     def __init__(self):
         self.head=Node
+    
+    def reverse(self):
+        prev = None
+        current = self.head
+        while(current is not None):
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
 
     def printllist(self):
         temp=self.head
@@ -28,6 +38,9 @@ if __name__ == '__main__':
     llist.head.next=second
     second.next=third
 
+    llist.printllist()
+
+    llist.reverse()
     llist.printllist()
 
 
