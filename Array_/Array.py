@@ -188,4 +188,33 @@ def mergesort(arr,start,end):
 print(arr)
 mergesort(arr,0,len(arr)-1)
 print(arr)
-            
+
+
+"---------------------------------------------------------------------------------------------------------------------------"
+
+
+# Reverse Array
+print("Reverse Array")
+arr=[1,2,3]
+print(arr)
+def reverse(arr,start=0,end=len(arr)-1):
+    while start<end:
+        arr[start],arr[end]=arr[end],arr[start]
+        start+=1
+        end-=1
+reverse(arr)
+print(arr)
+
+
+"______________________________________________________________________________________________________________________"
+print("Problems")
+arr=[1,2,3]
+print(arr)
+def find_second_lagest_element(arr):
+    for i in range(1,len(arr)-1):
+        sorted(arr)
+        if arr[i]!=arr[0]:
+            print("Second Lagest element is",arr[i])
+
+
+
